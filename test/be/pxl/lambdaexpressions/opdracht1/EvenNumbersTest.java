@@ -12,7 +12,7 @@ public class EvenNumbersTest {
 	@Test
 	public void checkResultFormatting() {
 		NumberMachine machine = new NumberMachine(NUMBERS_INPUT);
-		NumberSelector selector = new NumberSelector(machine);
+		Selector selector = new Selector(machine);
 		
 		String result = selector.showEvenNumbers();
 		
@@ -28,7 +28,7 @@ public class EvenNumbersTest {
 	@Test
 	public void onlyEvenNumbersRemain() {
 		NumberMachine machine = new NumberMachine(NUMBERS_INPUT);
-		NumberSelector selector = new NumberSelector(machine);
+		Selector selector = new Selector(machine);
 		
 		assertEquals(EXPECTED_OUTPUT, selector.showEvenNumbers());
 	}

@@ -12,7 +12,7 @@ public class HexNotationTest {
 	@Test
 	public void hexNotationUsedForInts() {
 		NumberMachine machine = new NumberMachine(NUMBERS_INPUT);
-		NumberSelector selector = new NumberSelector(machine);
+		Selector selector = new Selector(machine);
 		
 		assertEquals(EXPECTED_OUTPUT, selector.printHexNumbers());
 	}

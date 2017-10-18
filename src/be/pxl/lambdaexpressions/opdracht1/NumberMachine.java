@@ -16,6 +16,11 @@ public class NumberMachine {
 		for(int i=0;i<numbers.size();i++) {
 			if(filter.check(numbers.get(i))) {
 				result += numbers.get(i);
+				if(i == numbers.size()-1) {
+					
+				}else {
+					result += "-";
+				}
 			}
 		}
 		return result;

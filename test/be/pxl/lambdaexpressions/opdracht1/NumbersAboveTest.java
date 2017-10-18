@@ -15,7 +15,7 @@ public class NumbersAboveTest {
 	@Test
 	public void onlyBiggerNumbersAreShown() {
 		NumberMachine machine = new NumberMachine(NUMBERS_INPUT);
-		NumberSelector selector = new NumberSelector(machine);
+		Selector selector = new Selector(machine);
 		
 		assertEquals(EXPECTED_OUTPUT_1, selector.showNumbersAbove(NUMBER_LIMIT_1));
 	}
@@ -23,7 +23,7 @@ public class NumbersAboveTest {
 	@Test
 	public void greaterThanIsExclusive() {
 		NumberMachine machine = new NumberMachine(NUMBERS_INPUT);
-		NumberSelector selector = new NumberSelector(machine);
+		Selector selector = new Selector(machine);
 		
 		assertEquals(EXPECTED_OUTPUT_2, selector.showNumbersAbove(NUMBER_LIMIT_2));
 	}
