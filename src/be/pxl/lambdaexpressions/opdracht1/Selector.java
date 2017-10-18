@@ -20,6 +20,18 @@ public class Selector {
 		String tekst = machine.processNumbers(lambdaTest);
 		return tekst;
 	}
+	
+	public String showNumbersAbove(int hogerGetal) {
+		NumberFilter lambdaTest = (p) -> {
+			if(p > hogerGetal) {
+				return true;
+			}else {
+				return false;
+			}
+		};
+		String tekst = machine.processNumbers(lambdaTest);
+		return tekst;
+	}
 
 
 }
